@@ -41,31 +41,58 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Dynamically highlight active link based on current page URL
   const currentPath = window.location.pathname;
-  navLinks.forEach(link => {
-    const href = link.getAttribute('href');
-    if (currentPath.includes(href) && href !== 'index.html') {
-      link.classList.add('active');
-    } else if (href === 'index.html' && (currentPath.endsWith('/') || currentPath.endsWith('index.html') || currentPath === '')) {
-      link.classList.add('active');
-    }
-  });
+  // Clear all active classes first on load
+  navLinks.forEach(link => link.classList.remove('active'));
+  
+  // Set initial active state based on URL if not on homepage
+  if (!currentPath.endsWith('/') && !currentPath.endsWith('index.html') && currentPath.split('/').pop() !== '') {
+    navLinks.forEach(link => {
+      const href = link.getAttribute('href');
+      if (href && !href.startsWith('#') && currentPath.includes(href)) {
+        link.classList.add('active');
+      }
+    });
+  }
 
   function highlightNavLink() {
-    const sections = document.querySelectorAll('section[id]');
-    let scrollPos = window.scrollY + 200;
+    // Include both sections and the header hero
+    const sections = document.querySelectorAll('section[id], header[id]');
+    // Navbar height offset plus a little buffer
+    const navHeight = navbar.offsetHeight || 80;
+    let scrollPos = window.scrollY + navHeight + 50;
 
-    sections.forEach(section => {
-      if (scrollPos >= section.offsetTop && scrollPos < section.offsetTop + section.offsetHeight) {
-        const id = section.getAttribute('id');
+    // Only apply scroll highlighting on the homepage
+    if (currentPath.endsWith('/') || currentPath.endsWith('index.html') || currentPath.split('/').pop() === '') {
+      let currentSectionId = '';
+      
+      sections.forEach(section => {
+        if (scrollPos >= section.offsetTop && scrollPos < section.offsetTop + section.offsetHeight) {
+          currentSectionId = section.getAttribute('id');
+        }
+      });
+      
+      if (currentSectionId) {
         navLinks.forEach(link => {
           link.classList.remove('active');
-          if (link.getAttribute('href') === `index.html#${id}` || link.getAttribute('href') === `#${id}`) {
+          const href = link.getAttribute('href');
+          if (href === `index.html#${currentSectionId}` || href === `#${currentSectionId}`) {
+            link.classList.add('active');
+          }
+        });
+      } else if (window.scrollY < 50) {
+        // Fallback for absolute top
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#home' || link.getAttribute('href') === 'index.html#home') {
             link.classList.add('active');
           }
         });
       }
-    });
+    }
   }
+  
+  // Initial call to set correct state
+  highlightNavLink();
 
   // 2. Equipment Gallery Tabs Filter (Static and subpages)
   const tabButtons = document.querySelectorAll('.tab-btn');

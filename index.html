@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YOUR GYM NAME | Best Gym in Bodh Gaya | Build Your Best Body</title>
-  <meta name="description" content="Discover YOUR GYM NAME in Bodh Gaya - the #1 premium fitness center with certified trainers, high-end equipment, personal training, and proven weight loss/muscle gain results. Start your 1-day free trial today!">
-  <meta name="keywords" content="gym in bodh gaya, best gym in bodh gaya, fitness center in bodh gaya, personal trainer bodh gaya, Your Gym Name bodh gaya, body building bodh gaya, workout center bihar">
+  <title>YOUR GYM NAME | Best Gym in [CITY NAME] | Build Your Best Body</title>
+  <meta name="description" content="Discover YOUR GYM NAME in [CITY NAME] - the #1 premium fitness center with certified trainers, high-end equipment, personal training, and proven weight loss/muscle gain results. Start your 1-day free trial today!">
+  <meta name="keywords" content="gym in [CITY NAME], best gym in [CITY NAME], fitness center in [CITY NAME], personal trainer [CITY NAME], Your Gym Name [CITY NAME], body building [CITY NAME], workout center [STATE]">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="responsive.css">
   <!-- Font Awesome Icons -->
@@ -20,14 +20,14 @@
         <span class="nav-brand-accent">Your</span> Gym Name
       </a>
       <ul class="nav-menu">
-        <li><a href="index.html" class="nav-link active">Home</a></li>
-        <li><a href="about.html" class="nav-link">About</a></li>
-        <li><a href="services.html" class="nav-link">Services</a></li>
-        <li><a href="membership.html" class="nav-link">Memberships</a></li>
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#why-us" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#pricing" class="nav-link">Memberships</a></li>
         <li><a href="trainers.html" class="nav-link">Trainers</a></li>
-        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
-        <li><a href="testimonials.html" class="nav-link">Success Stories</a></li>
-        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="#premium-gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#reviews" class="nav-link">Success Stories</a></li>
+        <li><a href="#book-trial" class="nav-link">Contact</a></li>
       </ul>
       <button class="nav-burger" aria-label="Toggle menu">
         <i class="fas fa-bars"></i>
@@ -39,12 +39,12 @@
   <header class="hero" id="home">
     <div class="container">
       <div class="hero-content">
-        <span class="hero-tagline">“UNLEASH YOUR TRUE POTENTIAL”</span>
+        <span class="hero-tagline">UNLEASH YOUR TRUE POTENTIAL</span>
         <h1 class="hero-title">FORGE YOUR<br><span class="text-gradient">ULTIMATE PHYSIQUE</span></h1>
         <p class="hero-desc">Experience a state-of-the-art training environment designed for serious results. Elite equipment, professional coaching, and a community driven by excellence.</p>
         <div class="hero-ctas">
-          <a href="#" class="btn btn-primary open-inquiry"><i class="fas fa-dumbbell"></i> Start Your Fitness Journey</a>
-          <a href="#pricing" class="btn btn-secondary"><i class="fas fa-fire"></i> Book Free Trial</a>
+          <a href="#pricing" class="btn btn-primary"><i class="fas fa-tags"></i> Pricing Details</a>
+          <a href="#book-trial" class="btn btn-secondary"><i class="fas fa-fire"></i> Book Free Trial</a>
         </div>
         
         <!-- Hero Stats Counters -->
@@ -87,74 +87,108 @@
       </div>
 
       <!-- Why Choose Us Grid -->
-      <div class="gallery-grid" style="min-height: auto;">
+      <div class="gallery-grid" style="min-height: auto; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
         <!-- Card 1 -->
         <div class="gallery-item" style="height: 250px; background: var(--bg-card); cursor: default;" data-category="features">
           <div class="gallery-info" style="opacity: 1; transform: translateY(0);">
-            <div class="feature-icon-wrapper" style="width: 50px; height: 50px; margin-bottom: 12px;">
-              <i class="fas fa-user-tie" style="font-size: 1.5rem;"></i>
+            <div class="feature-icon-wrapper" style="width: 50px; height: 50px; margin-bottom: 12px; background: rgba(255,82,47,0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--accent);">
+              <i class="fas fa-magnet" style="font-size: 1.5rem;"></i>
             </div>
-            <h3 class="gallery-title">Certified Trainers</h3>
-            <p style="color: var(--text-secondary); font-size: 0.9rem; font-weight: 300; margin-top: 4px;">Elite coaches specializing in strength, conditioning, and rapid body transformations.</p>
+            <h3 class="gallery-title">More Leads</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; font-weight: 300; margin-top: 4px;">Strategically placed CTAs and WhatsApp integration designed to instantly capture visitor interest and drive high-quality leads.</p>
           </div>
         </div>
 
         <!-- Card 2 -->
         <div class="gallery-item" style="height: 250px; background: var(--bg-card); cursor: default;" data-category="features">
           <div class="gallery-info" style="opacity: 1; transform: translateY(0);">
-            <div class="feature-icon-wrapper" style="width: 50px; height: 50px; margin-bottom: 12px;">
-              <i class="fas fa-dumbbell" style="font-size: 1.5rem;"></i>
+            <div class="feature-icon-wrapper" style="width: 50px; height: 50px; margin-bottom: 12px; background: rgba(255,82,47,0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--accent);">
+              <i class="fas fa-crown" style="font-size: 1.5rem;"></i>
             </div>
-            <h3 class="gallery-title">Modern Equipment</h3>
-            <p style="color: var(--text-secondary); font-size: 0.9rem; font-weight: 300; margin-top: 4px;">State-of-the-art biomechanical machines and extensive free weight zones for max gains.</p>
+            <h3 class="gallery-title">Premium Branding</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; font-weight: 300; margin-top: 4px;">A dark, cinematic, high-end visual language that immediately establishes your gym as the premium choice in your local area.</p>
           </div>
         </div>
 
         <!-- Card 3 -->
         <div class="gallery-item" style="height: 250px; background: var(--bg-card); cursor: default;" data-category="features">
           <div class="gallery-info" style="opacity: 1; transform: translateY(0);">
-            <div class="feature-icon-wrapper" style="width: 50px; height: 50px; margin-bottom: 12px;">
-              <i class="fas fa-fire" style="font-size: 1.5rem;"></i>
+            <div class="feature-icon-wrapper" style="width: 50px; height: 50px; margin-bottom: 12px; background: rgba(255,82,47,0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--accent);">
+              <i class="fas fa-calendar-alt" style="font-size: 1.5rem;"></i>
             </div>
-            <h3 class="gallery-title">Fat Loss Programs</h3>
-            <p style="color: var(--text-secondary); font-size: 0.9rem; font-weight: 300; margin-top: 4px;">High-intensity fat burning circuits and customized plans guaranteed to shred fat fast.</p>
+            <h3 class="gallery-title">Easy Bookings</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; font-weight: 300; margin-top: 4px;">Frictionless user experience makes it incredibly easy for potential members to book a free trial directly from their phones.</p>
           </div>
         </div>
 
         <!-- Card 4 -->
         <div class="gallery-item" style="height: 250px; background: var(--bg-card); cursor: default;" data-category="features">
           <div class="gallery-info" style="opacity: 1; transform: translateY(0);">
-            <div class="feature-icon-wrapper" style="width: 50px; height: 50px; margin-bottom: 12px;">
-              <i class="fas fa-weight-hanging" style="font-size: 1.5rem;"></i>
+            <div class="feature-icon-wrapper" style="width: 50px; height: 50px; margin-bottom: 12px; background: rgba(255,82,47,0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--accent);">
+              <i class="fas fa-chart-line" style="font-size: 1.5rem;"></i>
             </div>
-            <h3 class="gallery-title">Strength Training</h3>
-            <p style="color: var(--text-secondary); font-size: 0.9rem; font-weight: 300; margin-top: 4px;">Advanced powerlifting setups to build solid muscle density and true functional power.</p>
+            <h3 class="gallery-title">Ready for Growth</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; font-weight: 300; margin-top: 4px;">Built with scalable architecture, ensuring your online presence handles traffic spikes during peak New Year signup seasons.</p>
           </div>
         </div>
 
         <!-- Card 5 -->
         <div class="gallery-item" style="height: 250px; background: var(--bg-card); cursor: default;" data-category="features">
           <div class="gallery-info" style="opacity: 1; transform: translateY(0);">
-            <div class="feature-icon-wrapper" style="width: 50px; height: 50px; margin-bottom: 12px;">
-              <i class="fas fa-clock" style="font-size: 1.5rem;"></i>
+            <div class="feature-icon-wrapper" style="width: 50px; height: 50px; margin-bottom: 12px; background: rgba(255,82,47,0.1); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--accent);">
+              <i class="fas fa-shield-alt" style="font-size: 1.5rem;"></i>
             </div>
-            <h3 class="gallery-title">Flexible Timings</h3>
-            <p style="color: var(--text-secondary); font-size: 0.9rem; font-weight: 300; margin-top: 4px;">Extended operating hours ensuring you can always fit your workout into a busy schedule.</p>
-          </div>
-        </div>
-
-        <!-- Card 6 -->
-        <div class="gallery-item" style="height: 250px; background: var(--bg-card); cursor: default;" data-category="features">
-          <div class="gallery-info" style="opacity: 1; transform: translateY(0);">
-            <div class="feature-icon-wrapper" style="width: 50px; height: 50px; margin-bottom: 12px;">
-              <i class="fas fa-utensils" style="font-size: 1.5rem;"></i>
-            </div>
-            <h3 class="gallery-title">Diet Guidance</h3>
-            <p style="color: var(--text-secondary); font-size: 0.9rem; font-weight: 300; margin-top: 4px;">Science-backed nutrition protocols and macro charting to complement your heavy lifting.</p>
+            <h3 class="gallery-title">Better Trust</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; font-weight: 300; margin-top: 4px;">Dynamic review sections and transformation galleries build immediate social proof and unquestionable trust with visitors.</p>
           </div>
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- Premium Gym Growth Dashboard Section -->
+  <section class="section-padding" id="growth-dashboard" style="background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%); position: relative; overflow: hidden; border-top: 1px solid rgba(255,82,47,0.1);">
+    <div style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 80%; height: 100%; background: radial-gradient(circle, rgba(255,82,47,0.05) 0%, transparent 70%); pointer-events: none;"></div>
+    
+    <div class="container" style="position: relative; z-index: 2;">
+      <div class="section-header">
+        <h2 class="section-title">PROVEN BUSINESS <span class="text-gradient">GROWTH</span></h2>
+        <p class="section-subtitle">This isn't just a website; it's a high-converting lead generation machine built to multiply your active memberships and trial bookings.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; margin-top: 40px;">
+        <div class="growth-metric-card" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 30px; text-align: center; transition: transform 0.3s ease, border-color 0.3s ease; position: relative; overflow: hidden;">
+          <div style="position: absolute; top: -20px; right: -20px; width: 100px; height: 100px; background: radial-gradient(circle, rgba(255,82,47,0.15) 0%, transparent 70%); border-radius: 50%;"></div>
+          <i class="fas fa-magnet" style="font-size: 2.5rem; color: var(--accent); margin-bottom: 15px;"></i>
+          <div style="font-size: 2.5rem; font-family: var(--font-heading); font-weight: 700; color: var(--text-primary); margin-bottom: 5px;">127+</div>
+          <div style="color: var(--text-secondary); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px;">Monthly Leads</div>
+        </div>
+
+        <div class="growth-metric-card" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 30px; text-align: center; transition: transform 0.3s ease, border-color 0.3s ease; position: relative; overflow: hidden;">
+          <div style="position: absolute; top: -20px; right: -20px; width: 100px; height: 100px; background: radial-gradient(circle, rgba(255,82,47,0.15) 0%, transparent 70%); border-radius: 50%;"></div>
+          <i class="fas fa-calendar-check" style="font-size: 2.5rem; color: var(--accent); margin-bottom: 15px;"></i>
+          <div style="font-size: 2.5rem; font-family: var(--font-heading); font-weight: 700; color: var(--text-primary); margin-bottom: 5px;">48</div>
+          <div style="color: var(--text-secondary); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px;">Trial Signups</div>
+        </div>
+
+        <div class="growth-metric-card" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 30px; text-align: center; transition: transform 0.3s ease, border-color 0.3s ease; position: relative; overflow: hidden;">
+          <div style="position: absolute; top: -20px; right: -20px; width: 100px; height: 100px; background: radial-gradient(circle, rgba(255,82,47,0.15) 0%, transparent 70%); border-radius: 50%;"></div>
+          <i class="fab fa-whatsapp" style="font-size: 2.5rem; color: #25D366; margin-bottom: 15px;"></i>
+          <div style="font-size: 2.5rem; font-family: var(--font-heading); font-weight: 700; color: var(--text-primary); margin-bottom: 5px;">312</div>
+          <div style="color: var(--text-secondary); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px;">WhatsApp Inquiries</div>
+        </div>
+
+        <div class="growth-metric-card" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 30px; text-align: center; transition: transform 0.3s ease, border-color 0.3s ease; position: relative; overflow: hidden;">
+          <div style="position: absolute; top: -20px; right: -20px; width: 100px; height: 100px; background: radial-gradient(circle, rgba(255,82,47,0.15) 0%, transparent 70%); border-radius: 50%;"></div>
+          <i class="fas fa-users" style="font-size: 2.5rem; color: var(--accent); margin-bottom: 15px;"></i>
+          <div style="font-size: 2.5rem; font-family: var(--font-heading); font-weight: 700; color: var(--text-primary); margin-bottom: 5px;">1200+</div>
+          <div style="color: var(--text-secondary); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px;">Active Members</div>
+        </div>
+      </div>
+    </div>
+    <style>
+      .growth-metric-card:hover { transform: translateY(-8px); border-color: var(--accent); box-shadow: 0 10px 30px rgba(255,82,47,0.1); }
+    </style>
   </section>
 
   <!-- Gym Intro Section / Play Badge -->
@@ -173,7 +207,7 @@
             </div>
           </div>
           <div class="about-body">
-            <p>Welcome to YOUR GYM NAME, the heart of strength and premium physical transformation in Bodh Gaya. Established with the passion to build a highly professional fitness community, our gym provides elite equipment, scientific nutrition guidance, and highly supportive, certified trainers.</p>
+            <p>Welcome to YOUR GYM NAME, the heart of strength and premium physical transformation in [CITY NAME]. Established with the passion to build a highly professional fitness community, our gym provides elite equipment, scientific nutrition guidance, and highly supportive, certified trainers.</p>
             <p>Whether you're a college student looking to build a muscular physique, a working professional seeking weight management, or a beginner starting your fitness journey, we support you at every single rep.</p>
           </div>
           <a href="about.html" class="btn btn-primary"><i class="fas fa-circle-info"></i> Discover Our Story</a>
@@ -182,13 +216,13 @@
         <div class="about-right">
           <!-- Interlocking Collage Layout -->
           <div class="collage-img collage-img-1">
-            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=600" alt="Heavy barbell lifting in Your Gym Name Bodh Gaya">
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=600" alt="Heavy barbell lifting in Your Gym Name [CITY NAME]">
           </div>
           <div class="collage-img collage-img-2">
-            <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=600" alt="High intensity training at Bodh Gaya gym">
+            <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=600" alt="High intensity training at [CITY NAME] gym">
           </div>
           <div class="collage-img collage-img-3">
-            <img src="https://images.unsplash.com/photo-1638536532686-d610adfc8e5c?q=80&w=600" alt="Free weights stack at premium gym Bodh Gaya">
+            <img src="https://images.unsplash.com/photo-1638536532686-d610adfc8e5c?q=80&w=600" alt="Free weights stack at premium gym [CITY NAME]">
           </div>
         </div>
       </div>
@@ -208,7 +242,7 @@
         <!-- Card 1 -->
         <div class="service-card">
           <div class="service-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=500" alt="Weight training program at Bodh Gaya gym">
+            <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=500" alt="Weight training program at [CITY NAME] gym">
           </div>
           <div class="service-content">
             <div class="service-icon"><i class="fas fa-dumbbell"></i></div>
@@ -221,7 +255,7 @@
         <!-- Card 2 -->
         <div class="service-card">
           <div class="service-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=500" alt="Fat loss training course at Bodh Gaya">
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=500" alt="Fat loss training course at [CITY NAME]">
           </div>
           <div class="service-content">
             <div class="service-icon"><i class="fas fa-fire-flame-curved"></i></div>
@@ -234,7 +268,7 @@
         <!-- Card 3 -->
         <div class="service-card">
           <div class="service-img-wrapper">
-            <img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?q=80&w=500" alt="Personal training package at Bodh Gaya fitness center">
+            <img src="https://images.unsplash.com/photo-1518310383802-640c2de311b2?q=80&w=500" alt="Personal training package at [CITY NAME] fitness center">
           </div>
           <div class="service-content">
             <div class="service-icon"><i class="fas fa-user-ninja"></i></div>
@@ -264,12 +298,12 @@
         <!-- Item 1: Fat Loss -->
         <div class="transform-card" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); overflow: hidden; position: relative; transition: transform 0.3s ease, border-color 0.3s ease;">
           <div class="before-after-img" style="position: relative; height: 300px;">
-            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=600" alt="Client weight loss before/after photo Bodh Gaya gym" style="width: 100%; height: 100%; object-fit: cover;">
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=600" alt="Client weight loss before/after photo [CITY NAME] gym" style="width: 100%; height: 100%; object-fit: cover;">
             <div style="position: absolute; top: 15px; right: 15px; background: rgba(0,0,0,0.8); color: white; padding: 6px 14px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; border: 1px solid var(--accent); box-shadow: 0 4px 10px rgba(255,82,47,0.2);">Before / After</div>
           </div>
           <div class="transform-info" style="padding: 24px;">
             <span class="gallery-tag" style="background: rgba(255,82,47,0.1); color: var(--accent); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: 600; text-transform: uppercase;">Fat Loss (3 Months)</span>
-            <h3 class="gallery-title" style="margin: 15px 0 10px; font-size: 1.4rem;">Rahul Yadav</h3>
+            <h3 class="gallery-title" style="margin: 15px 0 10px; font-size: 1.4rem;">[MEMBER NAME 3]</h3>
             <p style="color: var(--text-secondary); font-size: 0.95rem; font-weight: 300; line-height: 1.6;">Lost 18kg fat, dropped waist size from 38" to 32". Optimized health and cardio stamina.</p>
           </div>
         </div>
@@ -277,12 +311,12 @@
         <!-- Item 2: Muscle Gain -->
         <div class="transform-card" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); overflow: hidden; position: relative; transition: transform 0.3s ease, border-color 0.3s ease;">
           <div class="before-after-img" style="position: relative; height: 300px;">
-            <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=600" alt="Client muscle building progress Bodh Gaya Your Gym Name" style="width: 100%; height: 100%; object-fit: cover;">
+            <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=600" alt="Client muscle building progress [CITY NAME] Your Gym Name" style="width: 100%; height: 100%; object-fit: cover;">
             <div style="position: absolute; top: 15px; right: 15px; background: rgba(0,0,0,0.8); color: white; padding: 6px 14px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; border: 1px solid var(--accent); box-shadow: 0 4px 10px rgba(255,82,47,0.2);">Before / After</div>
           </div>
           <div class="transform-info" style="padding: 24px;">
             <span class="gallery-tag" style="background: rgba(255,82,47,0.1); color: var(--accent); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: 600; text-transform: uppercase;">Muscle Mass Gain</span>
-            <h3 class="gallery-title" style="margin: 15px 0 10px; font-size: 1.4rem;">Vikram Sen</h3>
+            <h3 class="gallery-title" style="margin: 15px 0 10px; font-size: 1.4rem;">[TRAINER NAME 2]</h3>
             <p style="color: var(--text-secondary); font-size: 0.95rem; font-weight: 300; line-height: 1.6;">Gained 9kg of pure skeletal muscle. Enhanced strength capacity and aesthetic physique lines.</p>
           </div>
         </div>
@@ -290,12 +324,12 @@
         <!-- Item 3: Strength Gain -->
         <div class="transform-card" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); overflow: hidden; position: relative; transition: transform 0.3s ease, border-color 0.3s ease;">
           <div class="before-after-img" style="position: relative; height: 300px;">
-            <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=600" alt="Female body toning transform Bodh Gaya" style="width: 100%; height: 100%; object-fit: cover;">
+            <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=600" alt="Female body toning transform [CITY NAME]" style="width: 100%; height: 100%; object-fit: cover;">
             <div style="position: absolute; top: 15px; right: 15px; background: rgba(0,0,0,0.8); color: white; padding: 6px 14px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; border: 1px solid var(--accent); box-shadow: 0 4px 10px rgba(255,82,47,0.2);">Before / After</div>
           </div>
           <div class="transform-info" style="padding: 24px;">
             <span class="gallery-tag" style="background: rgba(255,82,47,0.1); color: var(--accent); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: 600; text-transform: uppercase;">Toning & Strength</span>
-            <h3 class="gallery-title" style="margin: 15px 0 10px; font-size: 1.4rem;">Anjali Mehta</h3>
+            <h3 class="gallery-title" style="margin: 15px 0 10px; font-size: 1.4rem;">[MEMBER NAME 4]</h3>
             <p style="color: var(--text-secondary); font-size: 0.95rem; font-weight: 300; line-height: 1.6;">Improved posture flexibility, lowered visceral fat, and doubled general strength squats capacity.</p>
           </div>
         </div>
@@ -365,7 +399,7 @@
           <div class="award-card">
             <div class="award-year">#1</div>
             <div>
-              <h3 class="award-title">Top Rated Gym in Bodh Gaya</h3>
+              <h3 class="award-title">Top Rated Gym in [CITY NAME]</h3>
               <p style="color: var(--text-secondary); font-size: 0.9rem; font-weight: 300; margin-top: 4px;">Recognized as the premier training facility with a consistent 4.8/5-star local review index.</p>
             </div>
           </div>
@@ -438,7 +472,7 @@
     <div class="container">
       <div class="section-header">
         <h2 class="section-title">MEMBER <span class="text-gradient">TESTIMONIALS</span></h2>
-        <p class="section-subtitle">Hear what our amazing local community says about their workout experience at Your Gym Name Bodh Gaya.</p>
+        <p class="section-subtitle">Hear what our amazing local community says about their workout experience at Your Gym Name [CITY NAME].</p>
       </div>
 
       <!-- Testimonials Carousel -->
@@ -447,9 +481,9 @@
           <!-- Slide 1 -->
           <div class="testimonial-slide">
             <div class="testimonial-img-wrapper">
-              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400" alt="Member reviews Your Gym Name Bodh Gaya">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400" alt="Member reviews Your Gym Name [CITY NAME]">
               <div class="testimonial-badge">
-                <div class="testimonial-name">Saurabh Singh</div>
+                <div class="testimonial-name">[MEMBER NAME 1]</div>
                 <div class="testimonial-role">College Student</div>
               </div>
             </div>
@@ -458,7 +492,7 @@
                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
               </div>
               <blockquote class="testimonial-quote">
-                "Your Gym Name is undoubtedly the best gym in Bodh Gaya! The equipment list is spectacular, and the trainers are incredibly supportive. I joined three months ago for muscle building, and under their strict supervision and diet chart, I have gained 7kg of lean muscle mass. Highly recommended for students!"
+                "Your Gym Name is undoubtedly the best gym in [CITY NAME]! The equipment list is spectacular, and the trainers are incredibly supportive. I joined three months ago for muscle building, and under their strict supervision and diet chart, I have gained 7kg of lean muscle mass. Highly recommended for students!"
               </blockquote>
             </div>
           </div>
@@ -466,9 +500,9 @@
           <!-- Slide 2 -->
           <div class="testimonial-slide">
             <div class="testimonial-img-wrapper">
-              <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?q=80&w=400" alt="Female client feedback Bodh Gaya gym">
+              <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?q=80&w=400" alt="Female client feedback [CITY NAME] gym">
               <div class="testimonial-badge">
-                <div class="testimonial-name">Neha Sharma</div>
+                <div class="testimonial-name">[MEMBER NAME 2]</div>
                 <div class="testimonial-role">Working Professional</div>
               </div>
             </div>
@@ -494,15 +528,115 @@
     </div>
   </section>
 
+  <!-- Premium Membership Pricing Section -->
+  <section class="section-padding" id="pricing" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">ELITE <span class="text-gradient">MEMBERSHIPS</span></h2>
+        <p class="section-subtitle">Transparent pricing. No hidden fees. Choose the membership tier that aligns with your fitness goals and let's get to work.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; align-items: center;">
+        <!-- Basic Plan -->
+        <div class="pricing-card" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 40px 30px; text-align: center; transition: transform 0.3s ease;">
+          <h3 style="font-size: 1.5rem; color: var(--text-primary); margin-bottom: 10px;">Standard Access</h3>
+          <div style="font-size: 3rem; font-family: var(--font-heading); color: var(--accent); font-weight: 700; margin-bottom: 20px;">₹999<span style="font-size: 1rem; color: var(--text-secondary); font-weight: 400;">/mo</span></div>
+          <ul style="list-style: none; padding: 0; margin: 0 0 30px; text-align: left; color: var(--text-secondary); font-size: 0.95rem;">
+            <li style="margin-bottom: 12px;"><i class="fas fa-check" style="color: var(--accent); margin-right: 10px;"></i> Full Gym Floor Access</li>
+            <li style="margin-bottom: 12px;"><i class="fas fa-check" style="color: var(--accent); margin-right: 10px;"></i> Locker Room & Showers</li>
+            <li style="margin-bottom: 12px;"><i class="fas fa-check" style="color: var(--accent); margin-right: 10px;"></i> Free Wi-Fi</li>
+            <li style="margin-bottom: 12px; opacity: 0.5;"><i class="fas fa-times" style="margin-right: 10px;"></i> No Personal Training</li>
+          </ul>
+          <a href="https://wa.me/910123456789?text=Hi%2C%20I%E2%80%99m%20interested%20in%20your%20gym%20membership%20plans%20%28Standard%20Access%29." target="_blank" class="btn btn-secondary" style="width: 100%;"><i class="fab fa-whatsapp"></i> Choose Plan</a>
+        </div>
+
+        <!-- Premium Plan (Most Popular) -->
+        <div class="pricing-card popular" style="background: linear-gradient(180deg, rgba(255,82,47,0.05) 0%, rgba(255,82,47,0.01) 100%), var(--bg-card); border: 2px solid var(--accent); border-radius: var(--radius-lg); padding: 50px 30px; text-align: center; position: relative; transform: scale(1.05); box-shadow: 0 10px 40px rgba(255,82,47,0.15); z-index: 2;">
+          <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--accent); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">Most Popular</div>
+          <h3 style="font-size: 1.8rem; color: var(--text-primary); margin-bottom: 10px;">Pro Transformation</h3>
+          <div style="font-size: 3.5rem; font-family: var(--font-heading); color: var(--text-primary); font-weight: 700; margin-bottom: 20px;">₹1,999<span style="font-size: 1rem; color: var(--text-secondary); font-weight: 400;">/mo</span></div>
+          <ul style="list-style: none; padding: 0; margin: 0 0 30px; text-align: left; color: var(--text-secondary); font-size: 0.95rem;">
+            <li style="margin-bottom: 12px;"><i class="fas fa-check" style="color: var(--accent); margin-right: 10px;"></i> Everything in Standard</li>
+            <li style="margin-bottom: 12px;"><i class="fas fa-check" style="color: var(--accent); margin-right: 10px;"></i> Group Fitness Classes</li>
+            <li style="margin-bottom: 12px;"><i class="fas fa-check" style="color: var(--accent); margin-right: 10px;"></i> Customized Diet Chart</li>
+            <li style="margin-bottom: 12px;"><i class="fas fa-check" style="color: var(--accent); margin-right: 10px;"></i> 2 PT Sessions / Month</li>
+          </ul>
+          <a href="https://wa.me/910123456789?text=Hi%2C%20I%E2%80%99m%20interested%20in%20your%20gym%20membership%20plans%20%28Pro%20Transformation%29." target="_blank" class="btn btn-primary" style="width: 100%;"><i class="fab fa-whatsapp"></i> Join Pro Now</a>
+        </div>
+
+        <!-- VIP Plan -->
+        <div class="pricing-card" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 40px 30px; text-align: center; transition: transform 0.3s ease;">
+          <h3 style="font-size: 1.5rem; color: var(--text-primary); margin-bottom: 10px;">VIP Elite</h3>
+          <div style="font-size: 3rem; font-family: var(--font-heading); color: var(--accent); font-weight: 700; margin-bottom: 20px;">₹3,999<span style="font-size: 1rem; color: var(--text-secondary); font-weight: 400;">/mo</span></div>
+          <ul style="list-style: none; padding: 0; margin: 0 0 30px; text-align: left; color: var(--text-secondary); font-size: 0.95rem;">
+            <li style="margin-bottom: 12px;"><i class="fas fa-check" style="color: var(--accent); margin-right: 10px;"></i> Everything in Pro</li>
+            <li style="margin-bottom: 12px;"><i class="fas fa-check" style="color: var(--accent); margin-right: 10px;"></i> Unlimited PT Sessions</li>
+            <li style="margin-bottom: 12px;"><i class="fas fa-check" style="color: var(--accent); margin-right: 10px;"></i> Massage & Spa Access</li>
+            <li style="margin-bottom: 12px;"><i class="fas fa-check" style="color: var(--accent); margin-right: 10px;"></i> Exclusive VIP Lounge</li>
+          </ul>
+          <a href="https://wa.me/910123456789?text=Hi%2C%20I%E2%80%99m%20interested%20in%20your%20gym%20membership%20plans%20%28VIP%20Elite%29." target="_blank" class="btn btn-secondary" style="width: 100%;"><i class="fab fa-whatsapp"></i> Choose Elite</a>
+        </div>
+      </div>
+    </div>
+    <style>
+      .pricing-card:not(.popular):hover { transform: translateY(-5px); border-color: rgba(255,82,47,0.5); }
+      @media (max-width: 900px) {
+        .pricing-card.popular { transform: scale(1); }
+      }
+    </style>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section-padding" id="faq" style="background: var(--bg-primary);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">FREQUENTLY ASKED <span class="text-gradient">QUESTIONS</span></h2>
+        <p class="section-subtitle">Everything you need to know about setting up this premium high-converting website for your gym.</p>
+      </div>
+
+      <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px;">
+        <!-- FAQ 1 -->
+        <div class="faq-item" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 25px; cursor: pointer; transition: border-color 0.3s ease;">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h3 style="font-size: 1.1rem; margin: 0; color: var(--text-primary);">Can this website be customized for my gym brand?</h3>
+            <i class="fas fa-chevron-down" style="color: var(--accent);"></i>
+          </div>
+          <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 15px; line-height: 1.6;">Absolutely. Every section is designed to be fully customizable. We can update the accent colors, logos, imagery, and text to match your gym's unique branding identity.</p>
+        </div>
+        
+        <!-- FAQ 2 -->
+        <div class="faq-item" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 25px; cursor: pointer; transition: border-color 0.3s ease;">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h3 style="font-size: 1.1rem; margin: 0; color: var(--text-primary);">How does this website generate more membership leads?</h3>
+            <i class="fas fa-chevron-down" style="color: var(--accent);"></i>
+          </div>
+          <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 15px; line-height: 1.6;">It utilizes proven conversion psychology, strategically placed call-to-action buttons, high-visibility WhatsApp integration, and premium aesthetic design to build immediate trust with local visitors.</p>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 25px; cursor: pointer; transition: border-color 0.3s ease;">
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h3 style="font-size: 1.1rem; margin: 0; color: var(--text-primary);">Is the website optimized for mobile phones?</h3>
+            <i class="fas fa-chevron-down" style="color: var(--accent);"></i>
+          </div>
+          <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 15px; line-height: 1.6;">Yes, the design is mobile-first. Over 80% of your potential members will view your site on their phones, so we have ensured sticky mobile CTAs, fast loading, and perfectly scaled layouts across all devices.</p>
+        </div>
+      </div>
+    </div>
+    <style>
+      .faq-item:hover { border-color: var(--accent); }
+    </style>
+  </section>
+
   <!-- High-Converting CTA Banner Section -->
-  <section class="section-padding" style="background: linear-gradient(135deg, rgba(8, 9, 12, 0.85) 0%, rgba(8, 9, 12, 0.95) 100%), url('https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=1600') no-repeat center center/cover; position: relative; border-top: 1px solid var(--accent); border-bottom: 1px solid var(--accent);">
+  <section class="section-padding" id="book-trial" style="background: linear-gradient(135deg, rgba(8, 9, 12, 0.85) 0%, rgba(8, 9, 12, 0.95) 100%), url('https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=1600') no-repeat center center/cover; position: relative; border-top: 1px solid var(--accent); border-bottom: 1px solid var(--accent);">
     <div class="container" style="text-align: center; position: relative; z-index: 2;">
       <h2 class="section-title" style="margin-bottom: 20px; font-size: 3.5rem;">READY TO <span class="text-gradient">COMMIT?</span></h2>
       <p class="section-subtitle" style="margin-bottom: 40px; max-width: 700px; font-size: 1.2rem;">Don't wait for the perfect moment. The perfect moment is now. Claim your free trial session and experience the city's finest fitness facility today.</p>
       
       <div class="hero-ctas" style="justify-content: center; margin-bottom: 0; gap: 20px;">
         <a href="https://wa.me/910123456789?text=Hello%21+I+would+like+to+book+a+free+trial+session+at+Your+Gym+Name." target="_blank" class="btn btn-primary" style="transform: scale(1.1);"><i class="fab fa-whatsapp"></i> Claim Free Trial</a>
-        <a href="membership.html" class="btn btn-secondary"><i class="fas fa-tags"></i> View Pricing</a>
+        <a href="#pricing" class="btn btn-secondary"><i class="fas fa-tags"></i> Pricing Details</a>
       </div>
     </div>
   </section>
@@ -511,14 +645,14 @@
   <section class="section-padding" style="padding-bottom: 0;" id="gym-location">
     <div class="container">
       <div class="section-header" style="margin-bottom: 40px;">
-        <h2 class="section-title">OUR LOCATION IN <span class="text-gradient">BODH GAYA</span></h2>
+        <h2 class="section-title">OUR LOCATION IN <span class="text-gradient">[CITY NAME]</span></h2>
         <p class="section-subtitle">Visit our premium gym branch. Easily accessible with spacious bike and car parking spaces.</p>
       </div>
 
       <div class="map-container" style="height: 450px;">
-        <!-- Embedded Google Maps - Bodh Gaya Central Location -->
+        <!-- Embedded Google Maps - [CITY NAME] Central Location -->
         <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14451.989766946624!2d84.97825026977539!3d24.692613500000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f32c1598ef0cfb%3A0xe2128df0dc87e6fa!2sBodh%20Gaya%2C%20Bihar!5e0!3m2!1sen!2sin!4v1715838027389!5m2!1sen!2sin" 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14451.989766946624!2d84.97825026977539!3d24.692613500000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f32c1598ef0cfb%3A0xe2128df0dc87e6fa!2sBodh%20Gaya%2C%20[STATE]!5e0!3m2!1sen!2sin!4v1715838027389!5m2!1sen!2sin" 
           allowfullscreen="" 
           loading="lazy" 
           referrerpolicy="no-referrer-when-downgrade">
@@ -560,7 +694,7 @@
     <div class="modal-content">
       <button class="modal-close-btn" aria-label="Close Modal">&times;</button>
       <h3 class="modal-title">FREE TRIAL PASS</h3>
-      <p class="modal-subtitle">Claim your 1-Day Free Access key pass for YOUR GYM NAME in Bodh Gaya! Enter your contact details below.</p>
+      <p class="modal-subtitle">Claim your 1-Day Free Access key pass for YOUR GYM NAME in [CITY NAME]! Enter your contact details below.</p>
       
       <form id="inquiry-form" class="bmi-form">
         <div class="input-field">
@@ -603,3 +737,5 @@
   <script src="script.js"></script>
 </body>
 </html>
+
+
